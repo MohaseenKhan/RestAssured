@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite_Mosin">
+	<test name="sample testng test">
+		<parameter name="Browser" value="ff"/>
+		<groups>
+			<run>
+				<include name="regression"/>
+				<exclude name="sanity"/>
+				<exclude name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.test.practise.TestNgPractise"/>
+			<class name="com.test.practise.TestNgParallel"/>
+		</classes>
+	</test>
+</suite>	
